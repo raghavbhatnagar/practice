@@ -17,9 +17,9 @@
 
 public class countString {
     private static int countStrings(int n) {
-        // a[i] be the number of binary strings of length i which do not contain any two consecutive 1’s
+        // a[i] be the number of binary strings of length i which do not contain any two consecutive 1’s and which end in 1
         int[] a = new int[n];
-        // b[i] be the number of binary strings of length i which do not contain any two consecutive 0’s
+        // b[i] be the number of binary strings of length i which do not contain any two consecutive 1’s and which end in 0
         int[] b = new int[n];
         // Base case
         a[0] = b[0] = 1;
